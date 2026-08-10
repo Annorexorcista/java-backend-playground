@@ -29,6 +29,10 @@ public abstract class Product {
         changePrice(price);
     }
 
+    public Long getId() {
+        return id;
+    }
+
     public abstract String getProductType();
 
     public void changePrice(BigDecimal newPrice){
