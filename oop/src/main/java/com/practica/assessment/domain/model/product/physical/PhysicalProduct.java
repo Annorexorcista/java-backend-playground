@@ -3,10 +3,11 @@ package com.practica.assessment.domain.model.product.physical;
 import com.practica.assessment.domain.exception.InsufficientStockException;
 import com.practica.assessment.domain.model.product.Product;
 import com.practica.assessment.domain.model.product.ProductStatus;
+import com.practica.assessment.domain.model.product.capability.Sellable;
 
 import java.math.BigDecimal;
 
-public class PhysicalProduct extends Product {
+public class PhysicalProduct extends Product implements Sellable {
 
     private int stock;
     private double weight;
@@ -52,5 +53,10 @@ public class PhysicalProduct extends Product {
     @Override
     public String getProductType() {
         return "Physical";
+    }
+
+    @Override
+    public void sell() {
+        System.out.println("Selling...");
     }
 }

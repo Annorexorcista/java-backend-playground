@@ -2,10 +2,12 @@ package com.practica.assessment.domain.model.product.digital;
 
 import com.practica.assessment.domain.model.product.Product;
 import com.practica.assessment.domain.model.product.ProductStatus;
+import com.practica.assessment.domain.model.product.capability.Downloadable;
+import com.practica.assessment.domain.model.product.capability.Sellable;
 
 import java.math.BigDecimal;
 
-public class DigitalProduct extends Product {
+public class DigitalProduct extends Product implements Downloadable, Sellable {
 
     private String urlDownload;
     private long fileSize;
@@ -41,5 +43,15 @@ public class DigitalProduct extends Product {
     @Override
     public String getProductType() {
         return "Digital";
+    }
+
+    @Override
+    public void download() {
+        System.out.println("Downloading...");
+    }
+
+    @Override
+    public void sell() {
+        System.out.println("Selling...");
     }
 }
