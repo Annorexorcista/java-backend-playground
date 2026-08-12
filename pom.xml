@@ -10,11 +10,11 @@
     <packaging>pom</packaging>
     <modules>
         <module>oop</module>
-        <module>spring-booot</module>
         <module>concurrency</module>
         <module>docker</module>
         <module>cloud</module>
         <module>data-structures</module>
+        <module>protocols</module>
     </modules>
 
     <properties>
