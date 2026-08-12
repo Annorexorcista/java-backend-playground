@@ -15,6 +15,7 @@
         <module>cloud</module>
         <module>data-structures</module>
         <module>protocols</module>
+        <module>spring-boot</module>
     </modules>
 
     <properties>
