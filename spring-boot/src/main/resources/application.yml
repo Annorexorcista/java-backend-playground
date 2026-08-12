@@ -1,0 +1,3 @@
+jwt:
+  secret: "una-clave-larga-de-32-caracteres-minimo"
+  expiration: 3600
