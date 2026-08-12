@@ -11,11 +11,11 @@
     <modules>
         <module>oop</module>
         <module>concurrency</module>
-        <module>docker</module>
         <module>cloud</module>
         <module>data-structures</module>
         <module>protocols</module>
         <module>spring-boot</module>
+        <module>database</module>
     </modules>
 
     <properties>
